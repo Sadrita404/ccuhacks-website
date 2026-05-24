@@ -2,15 +2,17 @@
 	import './layout.css';
 	import '../app.css';
 
+	import 'swiper/css';
+	import 'swiper/css/bundle';
+
 	import favicon from '$lib/assets/favicon.svg';
 	import Lenis from 'lenis';
 	import { gsap, ScrollTrigger } from '$lib/gsap';
 
 	import { onMount } from 'svelte';
 
-	import { injectSpeedInsights } from '@vercel/speed-insights/sveltekit';
-
-	injectSpeedInsights();
+	// import { injectSpeedInsights } from '@vercel/speed-insights/sveltekit';
+	// injectSpeedInsights();
 
 	onMount(() => {
 		gsap.registerPlugin(ScrollTrigger);

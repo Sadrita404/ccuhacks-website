@@ -8,6 +8,7 @@
 	import InfoBox from '$lib/components/main/infobox/InfoBox.svelte';
 	import SmCmt from '$lib/components/main/header/SmCmt.svelte';
 	import SponsorMarquee from '$lib/components/sponsormarquee/SponsorMarquee.svelte';
+	import TeamView from '$lib/components/main/team/TeamView.svelte';
 
 	const gridinfo = [
 		{ lg: '150', sm: 'HACKERS' },
@@ -63,7 +64,7 @@
 		<SponsorMarquee />
 	</div> -->
 
-	<div class="flex flex-wrap gap-2 mt-6">
+	<div class="mt-6 flex flex-wrap gap-2">
 		{#each sponsors as sponsor}
 			<div class="card m-1/2">
 				<img src={sponsor.logo} alt={sponsor.name} class="h-12" />
@@ -82,10 +83,19 @@
 </section>
 
 <section
+	class="font-jetbrains bg-raisin border-content-gutter mx-auto flex max-w-115 flex-col items-center overflow-hidden border px-3 py-12 md:px-6"
+>
+	<SmCmt>// THE TEAM</SmCmt>
+	<div class="mt-6 w-115 overflow-hidden">
+		<!-- <TeamMemberCard name="Ritam Kom Das" role="Executive Organizer" img="/assets/team/ritam.png" /> -->
+		<TeamView />
+	</div>
+</section>
+
+<section
 	class="font-jetbrains bg-raisin border-content-gutter mx-auto flex max-w-115 flex-col items-center border px-3 py-12 md:px-6"
 >
 	<div class="text-snowflake text-center text-lg md:text-xl">
-		Looking to volunteer? <br />
 		Looking to sponsor? <br />
 		{'>>> '}
 		<span class="text-raisin">
