@@ -9,6 +9,7 @@
 	import SmCmt from '$lib/components/main/header/SmCmt.svelte';
 	import SponsorMarquee from '$lib/components/sponsormarquee/SponsorMarquee.svelte';
 	import TeamView from '$lib/components/main/team/TeamView.svelte';
+	import { MoveUpRight, SquareArrowOutUpRight } from '@lucide/svelte/icons';
 
 	const gridinfo = [
 		{ lg: '150', sm: 'HACKERS' },
@@ -37,8 +38,20 @@
 
 	<div class="mt-10 flex flex-col items-center">
 		<span class="text-center text-xl md:text-2xl">
-			<LinkNT href="https://ccuhacks.devfolio.co/" text="Register Using Devfolio" />
+			<!-- <span class="text-snowflake mb-4 text-2xl">{'>>> '} REGISTER NOW {'<<<'}</span> -->
+			<!-- <br /> -->
+			<LinkNT href="https://ccuhacks.devfolio.co/">
+				<span class="flex items-center gap-4 px-4 text-2xl">
+					REGISTER VIA DEVFOLIO <MoveUpRight class="inline " />
+				</span>
+			</LinkNT>
 		</span>
+		<div class="mt-2 w-full text-center">
+			<SmCmt
+				>Need help registering? Contact us at
+				<a href="mailto:team@ccuhacks.in" class="hover:text-lavender underline">team@ccuhacks.in</a>
+			</SmCmt>
+		</div>
 	</div>
 </section>
 
@@ -75,6 +88,13 @@
 	<div class="mt-6 w-full">
 		<FAQ />
 	</div>
+</section>
+
+<section
+	class="font-jetbrains bg-raisin border-content-gutter mx-auto flex max-w-115 flex-col items-center border px-3 py-12 md:px-6"
+>
+	<SmCmt>// SCHEDULE</SmCmt>
+	<div class="mt-6 w-full">TBD.</div>
 </section>
 
 <section

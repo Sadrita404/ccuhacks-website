@@ -1,3 +1,8 @@
-<div class="flex h-screen w-full items-center justify-center">
-	<img src="/assets/ritam-soon-tm.png" alt="coming soon" class="w-3/4 md:w-1/2" />
-</div>
+<section class="bg-raisin flex h-screen w-screen items-center justify-center">
+	<a
+		href="https://ccuhacks.devfolio.co/"
+		class="text-lavender hover:text-snow font-dotgothic text-2xl underline md:text-4xl"
+	>
+		{'>>>'} RSVP to ccuhacks v1 {'<<<'}</a
+	>
+</section>
