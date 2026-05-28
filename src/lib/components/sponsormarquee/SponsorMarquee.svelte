@@ -11,12 +11,12 @@
 	<div class="group">
 		{#each sponsors as sponsor}
 			<div class="card">
-				<img src={sponsor.logo} alt={sponsor.name} />
+				<enhanced:img src={sponsor.logo} alt={sponsor.name} />
 			</div>
 		{/each}
 		{#each sponsors as sponsor}
 			<div class="card" aria-hidden="true">
-				<img src={sponsor.logo} alt={sponsor.name} />
+				<enhanced:img src={sponsor.logo} alt={sponsor.name} />
 			</div>
 		{/each}
 	</div>

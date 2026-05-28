@@ -7,7 +7,7 @@
 	const teamMembers = [
 		{
 			name: 'Ritam Das',
-			role: 'Lead Organizer',
+			role: 'Lead Organizer & Founder',
 			img: '/assets/team/ritam.png'
 		},
 		{

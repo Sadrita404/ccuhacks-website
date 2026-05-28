@@ -75,7 +75,7 @@
 	<div class="mt-6 flex flex-wrap gap-2">
 		{#each sponsors as sponsor}
 			<div class="card m-1/2">
-				<img src={sponsor.logo} alt={sponsor.name} class="h-12" />
+				<enhanced:img src={sponsor.logo} alt={sponsor.name} class="h-12" />
 			</div>
 		{/each}
 	</div>

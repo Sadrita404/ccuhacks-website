@@ -6,6 +6,6 @@
 	<SmCmt>CCU, INDIA /// 2026 /// PWRD BY VOID_Walkers</SmCmt>
 </div>
 <div class="my-6 w-full">
-	<img src="/assets/logo_long.png" alt="CCUHACKS" class="w-full" />
+	<enhanced:img src="/assets/logo_long.png" alt="CCUHACKS" class="w-full" />
 </div>
 <div class="text-snowflake mt-2 w-full text-sm">A HACKATHON FOR TEENAGERS, BY TEENAGERS</div>
