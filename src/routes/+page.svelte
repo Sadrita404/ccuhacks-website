@@ -16,11 +16,15 @@
 		{ lg: '13-19', sm: 'AGES' },
 		{ lg: '24', sm: 'HOURS' }
 	];
+
 	const sponsors = [
 		{ name: 'JLCPCB', logo: '/assets/sponsors/jlcpcb.png' },
 		{ name: 'Wolfram Research', logo: '/assets/sponsors/wolfram.png' },
-		{ name: '.XYZ', logo: '/assets/sponsors/genxyz.png' },
-		{ name: 'StacksKB', logo: '/assets/sponsors/stackskb_alt.png' }
+		{ name: 'n8n', logo: '/assets/sponsors/n8n_pink_white_logo.png' },
+		{ name: 'StacksKB', logo: '/assets/sponsors/stackskb_alt.png' },
+		{ name: 'Desk Theory', logo: '/assets/sponsors/desk-theory-logo.png' },
+		{ name: 'PlotArmour', logo: '/assets/sponsors/plotarmrlogowhite.png' },
+		// { name: '.XYZ', logo: '/assets/sponsors/genxyz.png' },
 	];
 </script>
 
@@ -72,10 +76,10 @@
 	class="font-jetbrains bg-raisin border-content-gutter mx-auto flex max-w-115 flex-col items-center border px-3 py-12 md:px-6"
 >
 	<SmCmt>// SPONSORS</SmCmt>
-	<div class="mt-6 flex flex-wrap gap-2">
+	<div class="mt-6 flex flex-wrap gap-2 justify-center">
 		{#each sponsors as sponsor}
-			<div class="card m-1/2">
-				<enhanced:img src={sponsor.logo} alt={sponsor.name} class="h-12" />
+			<div class="card m-2">
+				<img src={sponsor.logo} alt={sponsor.name} class="h-10" />
 			</div>
 		{/each}
 	</div>
