@@ -9,7 +9,7 @@
 	import SmCmt from '$lib/components/main/header/SmCmt.svelte';
 	import SponsorMarquee from '$lib/components/sponsormarquee/SponsorMarquee.svelte';
 	import TeamView from '$lib/components/main/team/TeamView.svelte';
-	import { MoveUpRight, SquareArrowOutUpRight } from '@lucide/svelte/icons';
+	import { ChevronsRight, ChevronsLeft } from '@lucide/svelte/icons';
 
 	const gridinfo = [
 		{ lg: '150', sm: 'HACKERS' },
@@ -23,7 +23,7 @@
 		{ name: 'n8n', logo: '/assets/sponsors/n8n_pink_white_logo.png' },
 		{ name: 'StacksKB', logo: '/assets/sponsors/stackskb_alt.png' },
 		{ name: 'Desk Theory', logo: '/assets/sponsors/desk-theory-logo.png' },
-		{ name: 'PlotArmour', logo: '/assets/sponsors/plotarmrlogowhite.png' },
+		{ name: 'PlotArmour', logo: '/assets/sponsors/plotarmrlogowhite.png' }
 		// { name: '.XYZ', logo: '/assets/sponsors/genxyz.png' },
 	];
 </script>
@@ -41,15 +41,17 @@
 	</div>
 
 	<div class="mt-10 flex flex-col items-center">
-		<span class="text-center text-xl md:text-2xl">
-			<!-- <span class="text-snowflake mb-4 text-2xl">{'>>> '} REGISTER NOW {'<<<'}</span> -->
-			<!-- <br /> -->
-			<LinkNT href="https://ccuhacks.devfolio.co/">
-				<span class="flex items-center gap-4 px-4 text-2xl">
-					REGISTER VIA DEVFOLIO <MoveUpRight class="inline " />
+		<!-- <span class="text-center text-xl md:text-2xl"> -->
+		<!-- <span class="text-snowflake mb-4 text-2xl">{'>>> '} REGISTER NOW {'<<<'}</span> -->
+		<!-- <br /> -->
+		<div class="bg-lavender hover:bg-snow text-raisin mb-2 flex w-full items-center justify-center">
+			<a href="/register?utm_source=mainpage">
+				<span class="flex items-center gap-4 px-4 text-center text-2xl">
+					<ChevronsRight /> REGISTER VIA DEVFOLIO <ChevronsLeft />
 				</span>
-			</LinkNT>
-		</span>
+			</a>
+		</div>
+		<!-- </span> -->
 		<div class="mt-2 w-full text-center">
 			<SmCmt
 				>Need help registering? Contact us at
@@ -76,7 +78,7 @@
 	class="font-jetbrains bg-raisin border-content-gutter mx-auto flex max-w-115 flex-col items-center border px-3 py-12 md:px-6"
 >
 	<SmCmt>// SPONSORS</SmCmt>
-	<div class="mt-6 flex flex-wrap gap-2 justify-center">
+	<div class="mt-6 flex flex-wrap justify-center gap-2">
 		{#each sponsors as sponsor}
 			<div class="card m-2">
 				<img src={sponsor.logo} alt={sponsor.name} class="h-10" />
