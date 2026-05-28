@@ -31,5 +31,25 @@
 	const { children } = $props();
 </script>
 
-<svelte:head><link rel="icon" href={favicon} /></svelte:head>
+<svelte:head>
+	<link rel="icon" href={favicon} />
+
+	<!-- Privacy-friendly analytics by Plausible -->
+	<script async src="https://plausible.io/js/pa-PUkxNwM1-X52X389ZMH9Q.js"></script>
+	<script>
+		((window.plausible =
+			window.plausible ||
+			function () {
+				(plausible.q = plausible.q || []).push(arguments);
+			}),
+			(plausible.init =
+				plausible.init ||
+				function (i) {
+					plausible.o = i || {};
+				}));
+		plausible.init();
+	</script>
+</svelte:head>
+
+
 {@render children()}
