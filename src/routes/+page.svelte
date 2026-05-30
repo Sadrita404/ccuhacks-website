@@ -10,7 +10,7 @@
 	import SponsorMarquee from '$lib/components/sponsormarquee/SponsorMarquee.svelte';
 	import TeamView from '$lib/components/main/team/TeamView.svelte';
 	import { ChevronsRight, ChevronsLeft } from '@lucide/svelte/icons';
-	import { sponsorsGrouped, sponsorLabels } from '$lib/data/sponsors';
+	import Sponsors from '$lib/components/main/sponsors/Sponsors.svelte';
 
 	const gridinfo = [
 		{ lg: '150', sm: 'HACKERS' },
@@ -19,6 +19,7 @@
 	];
 </script>
 
+<ScanLine />
 <section
 	class="font-jetbrains bg-raisin border-content-gutter mx-auto flex max-w-115 flex-col items-center border px-3 py-12 md:px-6"
 >
@@ -70,38 +71,7 @@
 >
 	<SmCmt>// SPONSORS</SmCmt>
 
-	<!-- {#each Object.entries(sponsorsGrouped.sponsors) as [tier, tierSponsors]}
-		{#if tierSponsors.length}
-			<div class="mt-8 w-full">
-				<div>{sponsorLabels[tier]}</div>
-
-				<div class="mt-4 flex flex-wrap justify-center gap-2">
-					{#each tierSponsors as sponsor}
-						<div class="card m-2">
-							<img src={sponsor.logo} alt={sponsor.name} class="h-10" />
-						</div>
-					{/each}
-				</div>
-			</div>
-		{/if}
-	{/each} -->
-
-	{#each Object.entries(sponsorsGrouped) as [tier, tierSponsors]}
-		{#if tierSponsors.length}
-			<div class="mt-8 w-full">
-				<div class="mt-4 flex flex-wrap justify-center gap-2">
-					{#each tierSponsors as sponsor}
-						<div class="card m-2">
-							<img src={sponsor.logo} alt={sponsor.name} class="h-10" />
-						</div>
-					{/each}
-				</div>
-			</div>
-			<div class="text-snowflake mt-4 flex flex-row items-center justify-center gap-2">
-				<ChevronsRight />{sponsorLabels[tier]}<ChevronsLeft />
-			</div>
-		{/if}
-	{/each}
+	<Sponsors />
 </section>
 
 <section
