@@ -66,6 +66,12 @@ export const sponsors: Sponsor[] = [
         href: '',
         logo: '/assets/sponsors/plotarmrlogowhite.png'
     },
+    {
+        type: SponsorType.IN_KIND,
+        name: 'PicoCad 2',
+        href: '',
+        logo: '/assets/sponsors/PicoCAD_2_Logo.webp'
+    },
 
     {
         type: SponsorType.FOOD_PARTNER,
